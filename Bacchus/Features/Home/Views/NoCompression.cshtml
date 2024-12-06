@@ -1,0 +1,20 @@
+﻿<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+@{
+    await Html.RenderPartialAsync("_Header");
+
+    <div class="text-center">
+        <h1 class="display-4">No compression</h1>
+    </div>
+
+    <div class="container">
+        <div class="limited-div">
+            @{
+                await Html.RenderPartialAsync("_NoCompression");
+            }
+        </div>
+    </div>
+}
