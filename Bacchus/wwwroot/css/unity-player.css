@@ -1,0 +1,73 @@
+﻿/*=============== Unity WebGL player ===============*/
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+#unity-container.unity-desktop {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#unity-loading-text {
+    color: black;
+    text-align: center;
+}
+
+#unity-canvas {
+    background: #828080
+}
+
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none
+}
+
+#unity-logo {
+    width: 154px;
+    height: 130px;
+    background: url(../../img/unity-logo-light.png) no-repeat center;
+}
+
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 6.5px;
+    background: url(../../img/progress-bar-empty-light.png) no-repeat center;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
+    background: url(../../img/progress-bar-full-light.png) no-repeat center;
+}
+
+/*=============== Project-specific preview ===============*/
+.unity-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen__btn {
+    cursor: pointer;
+    display: flex;
+    background-color: var(--first-color-alt);
+    padding: .5rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    transition: transform .4s;
+}
+
+.utility__buttons {
+    column-gap: 2px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
